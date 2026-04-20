@@ -1,0 +1,45 @@
+{
+	"name": "ds_sql_01",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sql_01",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "StudentID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FirstName",
+				"type": "varchar"
+			},
+			{
+				"name": "LastName",
+				"type": "varchar"
+			},
+			{
+				"name": "Email",
+				"type": "varchar"
+			},
+			{
+				"name": "EnrollmentDate",
+				"type": "date"
+			},
+			{
+				"name": "GPA",
+				"type": "decimal",
+				"precision": 3,
+				"scale": 2
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Students"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

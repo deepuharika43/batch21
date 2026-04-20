@@ -1,0 +1,50 @@
+{
+	"name": "pipeline7",
+	"properties": {
+		"activities": [
+			{
+				"name": "If Condition1",
+				"type": "IfCondition",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"expression": {
+						"value": "@equals(variables('var'),'apples')",
+						"type": "Expression"
+					},
+					"ifFalseActivities": [
+						{
+							"name": "Wait2",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 5
+							}
+						}
+					],
+					"ifTrueActivities": [
+						{
+							"name": "Wait1",
+							"type": "Wait",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"waitTimeInSeconds": 4
+							}
+						}
+					]
+				}
+			}
+		],
+		"variables": {
+			"var": {
+				"type": "String",
+				"defaultValue": "apple"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-04-06T05:51:50Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

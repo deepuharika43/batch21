@@ -1,0 +1,17 @@
+{
+	"name": "adf4313455",
+	"properties": {
+		"globalParameters": {
+			"global_par": {
+				"type": "int",
+				"value": 5
+			}
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "aa1a3064-4b4f-44b1-b632-d291fdbbfbf8",
+		"tenantId": "1ba5db26-bc37-4f00-8268-bd016d190a6b"
+	}
+}
